@@ -1,5 +1,5 @@
-site_name: rattabootie.com
-repo_url: "https://github.com/fumbles/rattabootie"
+site_name: docs.yobagoya.com
+repo_url: "https://github.com/fumbles/yobagoya"
 nav:
   - Landing: "index.md"
   - Under Construction:
