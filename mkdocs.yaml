@@ -1,5 +1,5 @@
 site_name: rattabootie.com
-repo_url: "https://github.com/fumbles/rattabootie.github.com"
+repo_url: "https://github.com/fumbles/rattabootie"
 nav:
   - Landing: "index.md"
   - Under Construction:
