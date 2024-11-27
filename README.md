@@ -1,45 +1,39 @@
-# The CIO CI / CD Runbook
+## Welcome to GitHub Pages
+Hello World
 
-A runbook for the platform team to use when recovering from errors/outages.
+You can use the [editor on GitHub](https://github.com/fumbles/rattabootie/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-## Table of Contents
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-- [The CIO CI / CD Runbook](#the-cio-ci--cd-runbook)
-  - [Table of Contents](#table-of-contents)
-  - [Getting Started](#getting-started)
-  - [Local Development](#local-development)
-  - [Deploying Updates](#deploying-updates)
+### Markdown
 
-## Getting Started
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-This repository uses `mkdocs` to generate a static website from GitHub flavored markdown. `mkdocs` is a Python-based tool and can be installed along with other dependencies using [Poetry](https://python-poetry.org).
+```markdown
+Syntax highlighted code block
 
-Install Poetry on your system by following the instructions at https://python-poetry.org/docs/#installation. Currently, micropipenv is not compatible with versions of poetry at 1.5.0 or higher. Therefore, I recommend installing via `curl -sSL https://install.python-poetry.org | python3 - --version 1.4.2`. See: https://github.com/thoth-station/micropipenv/issues/280.
+# Header 1
+## Header 2
+### Header 3
 
-Next, run the following commands to install `mkdocs` and other dependencies
+- Bulleted
+- List
 
-```bash
-poetry install
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
 ```
 
-The above command installs dependencies in an isolated environment for this project
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-## Local Development
+### Jekyll Themes
 
-When creating or updating the content of the site, `poetry run serve` can be used to serve the site from the local filesystem. `poetry run package` will produce a static html copy of the site and is used by the pipeline.
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fumbles/rattabootie/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-```bash
-poetry run serve
-```
+### Support or Contact
 
-`mkdocs` will automatically rebuild the site as changes are made.
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-## Deploying Updates
-
-This repository uses the `python-v39-poetry-ui-container-image` pipeline to deploy the documentation to Cirrus. It will build and deploy pushed branches to a test application with a custom route, and the `main` branch to the production route.
-
-
-## Adding or changing the pfe password section
-`htpasswd -c .htpasswd username`  
-- It will ask you for a password after  
-	- Then just git add/commit/push the site/.htpasswd-pfe file  
