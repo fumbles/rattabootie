@@ -1,0 +1,6 @@
+#site/
+venv
+.DS_Store
+dist/
+*.pyc
+.env

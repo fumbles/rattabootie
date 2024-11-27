@@ -1,0 +1,3 @@
+set -e
+
+mkdocs build

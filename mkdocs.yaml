@@ -1,0 +1,116 @@
+site_name: rattabootie.github.com
+repo_url: "https://github.com/fumbles/rattabootie.github.com"
+nav:
+  - Landing: "index.md"
+  - Under Construction:
+      - "Some Pages": "page1.md"
+      
+  
+  
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  static_templates:
+    - 404.css
+  features:
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - navigation.tabs
+    - navigation.tabs.sticky
+    #- navigation.indexes # breaks base page toc
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    #- navigation.instant
+    #- navigation.instant.prefetch
+    #- navigation.instant.progress
+    - content.code.annotate
+  icon: 
+    annotation: material/cloud-circle
+    admonition:
+      info: simple/ibmcloud
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      #tip: octicons/squirrel-16
+      tip: simple/ibm
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      #quote: octicons/quote-16
+      quote: fontawesome/solid/paint-roller
+      
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+plugins:
+- offline
+- open-in-new-tab
+- search:
+    separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+- exclude-search:
+    exclude:
+- minify:              # An MkDocs plugin to minify HTML, JS or CSS files prior to being written to disk.
+    minify_html: true
+- glightbox            # Adds better image loading
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  #- markdown_grid_tables
+  - markdown_tables_extended
+  - md_in_html
+  - pymdownx.caret
+  - admonition         # Adds boxes for Notes, Warnings, etc.
+  - attr_list          # Adds attribute lists to generated HTML
+  - codehilite         # Syntax coloring for code blocks
+  - def_list           # Adds syntax for definition lists
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - sane_lists         # Enables list items with multiple paragraphs
+  - kbdextension       # <kbd> keyboard like hilight for markdown
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details   # Enable collapsible sections
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      #custom_fences:
+        #- name: mermaid
+          #class: mermaid
+          #format: !!python/name:pymdownx.superfences.fence_code_format
+  #- pymdownx.progressbar:
+  - toc:               # Builds a table of contents
+      permalink: "#"   # Puts a "#" at the end of each header, which # copies a link to that header when clicked
+      title: On this page
+
+  
+  
+
