@@ -7,10 +7,18 @@ Welcome to some little set of pages by me (fumbles)
 This web site contains documentation for me or others to use as a reference.
 
 ???+ info annotate "Mkdocs resources"
+    - [Deploying mkdocs to GitHub Pages](https://www.mkdocs.org/user-guide/deploying-your-docs/)  
     - [Official Mkdocs Markdown References](https://squidfunk.github.io/mkdocs-material/reference/)  
     - [https://facelessuser.github.io/pymdown-extensions/extensions/superfences/](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/)  
     - [https://github.com/mkdocs/catalog](https://github.com/mkdocs/catalog)  
     - [Cheat Sheet](https://yakworks.github.io/docmark/cheat-sheet/#blockquotes)  
+
+???+ info annotate "Steps"  
+    1. Edit docs locally  
+    2. Serve to verify Changes  
+        - `mkdocs serve`  
+    3. git add, commit, push to save  
+    4. `mkdocs gh-deploy`  to Push to GitHub Pages  
 
 
 
