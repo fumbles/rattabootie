@@ -30,7 +30,7 @@ This web site contains documentation for me or others to use as a reference.
 
 
 <div>
-    <iframe src="https://rattabootie.com/assets/IBM_TS7700_Release_5.4_Guide.pdf" width=100% height="800"></iframe>
+    <iframe src="https://yobagoya.com/assets/IBM_TS7700_Release_5.4_Guide.pdf" width=100% height="800"></iframe>
 </div>
   
   
