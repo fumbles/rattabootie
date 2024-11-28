@@ -1,5 +1,5 @@
 [tool]
 name = "runbook"
 version = "1.0.0"
-description = "Enterprise Tape Runbook"
-authors = ["Daniel Riggins <danielriggins@us.ibm.com>"]
+description = "Misc blog page"
+authors = ["Daniel Riggins <danielr.riggins@gmail.com>"]
