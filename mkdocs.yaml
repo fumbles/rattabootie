@@ -1,4 +1,4 @@
-site_name: docs.yobagoya.com
+site_name: yobagoya.com
 repo_url: "https://github.com/fumbles/yobagoya"
 nav:
   - Landing: "index.md"
